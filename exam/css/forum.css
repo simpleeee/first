@@ -1,0 +1,25 @@
+body{background-color: #999999;color: #333}
+a{color: #555;}
+a:hover{color: black}
+.header{background-color: white;}
+.header .aw-search-box{float: left;width: 280px;padding: 10px 0}
+.header form{display: inline-block;position: relative;}
+.header .search{;display: inline-block;padding-right: 30px;}
+.header #search-btn{position: absolute;right: 5px;top: 8px;font-size: 18px;}
+/*.header .header-left{padding-left: 30px}*/
+.aw-user-nav{display: inline-block;float: right;margin: 10px  0 0 10px;position: relative}
+.aw-top-nav{display: inline-block}
+.reg-btn, .login-btn{padding: 6px 25px;margin-left: 10px}
+/*.aw-top-nav a{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*bottom: -5px;*/
+    /*z-index: 400;*/
+    /*left: 50%;*/
+    /*margin-left: -5px;*/
+    /*border-width: 5px 5px 0 5px;*/
+    /*border-style: solid;*/
+    /*border-color: #fff transparent;*/
+    /*display: block;*/
+    /*width: 0;*/
+/*}*/

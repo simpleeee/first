@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <base href="http://localhost:63342/exam/">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>登录</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="aw-login-box">
+            <div class="login-box">
+                <div class="row">
+                    <div class="col-md-7 login-left">
+                        <h1><a href=""></a></h1>
+                        <h2>Ghost中文网</h2>
+                        <form action="">
+                            <input type="text" class="form-control " id="userName" placeholder="邮箱 / 用户名">
+                            <input type="text" class="form-control" id="pass" placeholder="密码">
+                            <p class="alert alert-danger error_message"><i class="exclamation"></i><span>请输入正确的账号和密码</span></p>
+                            <p>
+                                <input type="checkbox" id="remember"> 记住我<span class="forget-pass"><a href="">忘记密码</a></span><button type="button" class="btn btn-primary pull-right" id="login">登录</button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col-md-5 login-right">
+                        <div class="right-content">
+                            <h2>第三方账号登录</h2>
+                            <a href="" id="weibo-login" class="btn btn-block"></a>
+                            <a href="" id="qq-login" class="btn btn-block"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-bottom">
+                <p>还没有账号? <a href="">立即注册</a>  • <a href="">游客访问</a>  • <a href="">问答阅读</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var name=$("#userName").val();
+        var pass=$("#pass").val();
+        $("#login").on("click",function(){
+            if(name=="" && pass==""){
+                $(".alert-danger").show();
+            }
+        })
+    </script>
+</body>
+</html>
